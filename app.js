@@ -10,9 +10,7 @@ var PORT = 8080,
     
 mongoose.connect('mongodb://' + HOST_NAME + '/' + DATABASE_NAME);
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({
-  extended: true
-}));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
 
 // Meal.create(
