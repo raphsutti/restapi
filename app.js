@@ -8,7 +8,9 @@ var PORT = 8080,
     HOST_NAME = 'localhost',
     DATABASE_NAME = 'meal';
     
-mongoose.connect('mongodb://' + HOST_NAME + '/' + DATABASE_NAME);
+// mongoose.connect('mongodb://' + HOST_NAME + '/' + DATABASE_NAME);
+mongoose.connect('mongodb://admin:meal12@ds125831.mlab.com:25831/mealplan');
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
